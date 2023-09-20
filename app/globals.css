@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*=============== Media Queries=========== */
+
+/* Landing Page */
+
+@media all and (max-width: 750px) {
+  #container {
+    display: block;
+  }
+
+  #left {
+    height: 85vh;
+  }
+
+  #right {
+    height: 100vh;
+    margin-top: 100px;
+  }
+
+  #scroll-down-div {
+    display: flex;
+  }
+  #MODAL {
+    width: 90%;
+  }
+  #ModalPRO {
+    width: 80%;
+  }
+  #profileCard {
+    width: 70%;
+  }
+  .card-id {
+    text-align: start;
+    flex-direction: column;
+  }
+}
+
+@media all and (max-width: 450px) {
+  #right {
+    height: 600px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+}
+
+/* Form */
+
+@media all and (max-width: 750px) {
+  #form {
+    height: 500px;
+  }
+}
+
+@media all and (max-width: 450px) {
+  #main-div {
+    width: 90%;
+    margin-bottom: 5%;
+  }
+
+  #login-buttons {
+    flex-direction: column;
+  }
+
+  #login-buttons > button {
+    margin: auto;
+    margin-top: 2%;
+  }
+}
+
+/* Dashboard */
+@media all and (max-width: 850px) {
+  #dashboardContainer {
+    padding: 3%;
+  }
+
+  #dashboardLeft {
+    display: none;
+  }
+
+  #dashboardRight {
+    margin: auto;
+  }
+}
+
+/* Navbar */
+@media all and (max-width: 900px) {
+  #search {
+    display: none;
+  }
+}
+
+/* Cards */
+#card-div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-column-gap: 3%;
+  grid-row-gap: 5%;
+  margin: auto;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  width: 95%;
+  font-family: "Lato", sans-serif;
+}
+@media all and (max-width: 450px) {
+  #card-div {
+    margin-top: 20px;
+  }
+}
+
+/* Chart */
+@media all and (max-width: 450px) {
+  #mainGraphContainer {
+    margin-top: 100px;
+  }
+}
+
+/* Bottom Card */
+#bottomCardDiv {
+  display: grid;
+  margin: auto;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-column-gap: 3%;
+  grid-row-gap: 5%;
+  margin: auto;
+  margin-top: 3%;
+  margin-bottom: 50px;
+  width: 95%;
+}
+
+@media all and (max-width: 450px) {
+  #bottomCardDiv {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-top: 30px;
+  }
+}
